@@ -13,6 +13,7 @@ export const Form = styled.form`
 
 export const Input = styled.input`
     background-color: rgba(0,0,0,.6);
+    color: #fff;
     padding: .5rem;
     border: none;
     border-radius: .5rem;
