@@ -29,6 +29,12 @@ export const Container = styled.li`
         }
     }
 
+    &:hover {
+        div {
+            opacity: 1;
+        }
+    }
+
     @media (max-width: ${ endpoints.mobile }) {
         input {
             width: 100%;
@@ -77,7 +83,9 @@ export const Text = styled.input`
 export const ButtonsArea = styled.div`
     display: flex;
     flex-direction: column;
+    opacity: 0;
     gap: .5rem;
+    transition: opacity .2s linear;
 
     @media (max-width: ${ endpoints.mobile }) {
         flex-direction: row;
